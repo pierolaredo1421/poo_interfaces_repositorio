@@ -47,9 +47,5 @@ public class EjemploRepositorioProducto {
         System.out.println("\n===== eliminar =====\n");
         repoProduct.eliminar(4);
         repoProduct.listar().forEach(System.out::println);
-
-
-
-
     }
 }

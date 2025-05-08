@@ -12,9 +12,11 @@ public class ProductoListRepositorio extends AbstractoListRepositorio<Producto> 
 
     @Override
     public void editar(Producto producto) {
-        Producto p  = porId(producto.getId());
-        p.setDescription(p.getDescription());
-        p.setPrecio(p.getPrecio());
+        Producto p = porId(producto.getId());
+        if (p != null) {
+            p.setDescription(producto.getDescription());
+            p.setPrecio(producto.getPrecio());
+        }
     }
 
     @Override
