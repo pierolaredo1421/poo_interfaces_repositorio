@@ -9,5 +9,4 @@ public interface CrudRepositorio<T> {
     void crear(T cliente);
     void editar(T cliente);
     void eliminar(Integer id);
-
 }

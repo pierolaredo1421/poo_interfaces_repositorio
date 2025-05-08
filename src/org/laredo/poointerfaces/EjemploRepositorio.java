@@ -2,6 +2,7 @@ package org.laredo.poointerfaces;
 
 import org.laredo.poointerfaces.model.Cliente;
 import org.laredo.poointerfaces.repositorio.*;
+import org.laredo.poointerfaces.repositorio.lista.ClienteListRepositorio;
 
 import java.util.List;
 

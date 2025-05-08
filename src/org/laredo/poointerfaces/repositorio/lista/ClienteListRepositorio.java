@@ -1,6 +1,8 @@
-package org.laredo.poointerfaces.repositorio;
+package org.laredo.poointerfaces.repositorio.lista;
 
 import org.laredo.poointerfaces.model.Cliente;
+import org.laredo.poointerfaces.repositorio.AbstractoListRepositorio;
+import org.laredo.poointerfaces.repositorio.Direccion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +31,7 @@ public class ClienteListRepositorio extends AbstractoListRepositorio<Cliente> {
     @Override
     public List<Cliente> listar(String campo, Direccion dir) {
         List<Cliente> listaOrdenada = new ArrayList<>(this.dataSource);
-        dataSource.sort((a, b) -> {
+        listaOrdenada.sort((a, b) -> {
                     int resultado = 0;
                     if (dir == Direccion.ASC) {
                         resultado = ordenar(campo, a, b);
